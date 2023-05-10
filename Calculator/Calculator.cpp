@@ -4,6 +4,7 @@
 #include <iostream>
 
 float Add(float x, float y);
+float Divide(float x, float y);
 
 int main()
 {
@@ -17,9 +18,15 @@ int main()
 
     //Calculations
     std::cout << x << " + " << y << " = " << Add(x, y);
+    std::cout << std::endl << x << " / " << y << " = " << Divide(x, y);
 }
 
 float Add(float x, float y)
 {
     return x + y;
+}
+
+float Divide(float x, float y)
+{
+    return x / y;
 }
