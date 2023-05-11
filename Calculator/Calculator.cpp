@@ -6,6 +6,7 @@
 float Add(float x, float y);
 float Multiply(float x, float y);
 float Subtract(float x, float y);
+float Divide(float x, float y);
 
 int main()
 {
@@ -21,7 +22,7 @@ int main()
     std::cout << x << " + " << y << " = " << Add(x, y);
     std::cout << std::endl << x << " - " << y << " = " << Subtract(x, y);
     std::cout << std::endl << x << " x " << y << " = " << Multiply(x, y);
-    
+    std::cout << std::endl << x << " / " << y << " = " << Divide(x, y);
 }
 
 float Add(float x, float y)
@@ -35,4 +36,8 @@ float Multiply(float x, float y)
 float Subtract(float x, float y)
 {
     return x - y;
+}
+float Divide(float x, float y)
+{
+    return x / y;
 }
